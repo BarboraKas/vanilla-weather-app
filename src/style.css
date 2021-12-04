@@ -87,3 +87,29 @@ li::first-letter {
   height: 50px;
   line-height: 20px;
 }
+
+#temperature {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+.units {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
+#celsius-link {
+  text-decoration: none;
+}
+.main .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.main .active :hover {
+  text-decoration: none;
+}
