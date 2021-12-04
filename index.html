@@ -16,26 +16,28 @@
   </head>
   <body>
     <div class="weather">
-      <form>
+      <form id="search-form" class="mb-3">
         <div class="row">
           <div class="col-6">
             <input
               type="search"
               placeholder="Enter a city..."
-              class="form control search-input"
+              class="form-control search-input"
+              id="city-input"
+              autocomplete="off"
             />
           </div>
-          <div class="col-3 p-0">
+          <div class="col p-0">
             <input
               type="submit"
-              class="btn btn-primary w-100 search"
+              class="btn btn-primary btn-lg w-100"
               value="Search"
             />
           </div>
-          <div class="col-3 p-0">
+          <div class="col p-0">
             <input
               type="submit"
-              class="btn btn-primary w-100 search"
+              class="btn btn-primary btn-lg w-100"
               value="Current Location"
             />
           </div>
