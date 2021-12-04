@@ -45,7 +45,7 @@ li::first-letter {
 }
 
 .hauptBild {
-  width: 35%;
+  width: 44%;
   margin: 30px 30px 50px 30px;
 }
 
@@ -96,7 +96,7 @@ li::first-letter {
 .units {
   text-align: center;
   font-family: "Lobster", cursive;
-  font-size: 40px;
+  font-size: 20px;
 }
 #fahrenheit-link {
   text-decoration: none;
