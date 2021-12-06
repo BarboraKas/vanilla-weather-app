@@ -73,6 +73,22 @@ function getForecast(coordinates) {
   axios.get(apiURl).then(displayForecast);
 }
 
+function changeBackground(temp) {
+  console.log(temp);
+  let background = document.querySelector(".weather");
+  if (temp > -10 && temp <= 5) {
+    color = "rgba(50,97,214, 0.4)";
+  } else if (temp > 5 && temp <= 10) {
+    color = "rgba(244,244,244, 0.4)";
+  } else if (temp > 10 && temp <= 25) {
+    color = "rgba(244,204,0, 0.4)";
+  } else if (temp > 26) {
+    color = "rgba(216,128,48, 0.4)";
+  }
+
+  document.querySelector(".weather").style.background = color;
+}
+
 function getTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -97,6 +113,7 @@ function getTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+  changeBackground(response.data.main.temp);
 }
 function search(city) {
   let apiKey = "98b36d0829d6e91f19ba540afdc162ac";
@@ -137,4 +154,4 @@ fahrenheitLink.addEventListener("click", showFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
 
-search("New York");
+search("Vienna");
