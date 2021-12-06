@@ -69,6 +69,8 @@ li::first-letter {
 .days {
   background-color: transparent;
   border: none;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .search {
@@ -112,4 +114,12 @@ li::first-letter {
 
 .main .active :hover {
   text-decoration: none;
+}
+.weather-max {
+  font-size: 15px;
+}
+
+.weather-min {
+  font-size: 15px;
+  opacity: 0.6;
 }
